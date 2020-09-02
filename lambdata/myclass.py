@@ -9,16 +9,9 @@ class Action:
 
     def offer(self):
         print(f"Good Offer is Coming {self.size.upper()} {self.color.upper()}Today!")
-    
-class ActionComplex(Action): 
-     def __init__(self, color, size, price):
-        self.color = color
-        self.size = size
-        self.price = price
-        self.style="good fit"
-     #def __init__(self, color, size, price):
-       #Action().__init__(color, size, price)
-       
+    class ActionComplex(): 
+        def big_deal(self):
+            pass
 
 if __name__ == "__main__":   
   
@@ -34,10 +27,6 @@ if __name__ == "__main__":
     print(action6.color, action6.size, action6.price)
     action6.offer()
 
-    action6= Action(color="Yellow", size="Medium", price=400)
-    print(action6.color, action6.size, action6.price)
-    action6.offer()
-
-    action7= ActionComplex(color="Red", size="Small", price=500)
+    action7= Action(color="Yellow", size="Medium", price=400)
     print(action7.color, action7.size, action7.price)
     action7.offer()
