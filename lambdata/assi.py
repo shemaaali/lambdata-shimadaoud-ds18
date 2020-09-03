@@ -13,6 +13,7 @@ def add_state_names_column(my_df):
     """
     
     my_df['variable_df'] = my_df.copy()
+    df = pd.DataFrame()
     df['df3'] = {"CA": "Cali", "CO": "Colo", "CT": "Conn", "DC": "Wash", "TX": "Tex"}
     my_df["name"] =  df["abbrev"].map(my_df['variable_df'])
     breakpoint()
