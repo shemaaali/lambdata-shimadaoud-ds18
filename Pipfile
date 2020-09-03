@@ -4,9 +4,18 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+twine = "*"
+autopep8 = "*"
+pytest = "*"
 
 [packages]
 pandas = "*"
+matplotlib = "*"
+seaborn = "*"
+sklearn = "*"
+scipy = "*"
+confusion-matrix = "*"
+requests = "*"
 
 [requires]
 python_version = "3.8"

@@ -12,13 +12,12 @@ def add_state_names_column(my_df):
     return the copy of original datafram with an additional column
     """
     
-    my_df['variable_df'] = my_df.copy()
-    df = pd.DataFrame()
-    df['df3'] = {"CA": "Cali", "CO": "Colo", "CT": "Conn", "DC": "Wash", "TX": "Tex"}
-    my_df["name"] =  df["abbrev"].map(my_df['variable_df'])
+    my_df = my_df.copy()
+    df = {"CA": "Cali", "CO": "Colo", "CT": "Conn", "DC": "Wash", "TX": "Tex"}
+    my_df["names"] =  df["abbrev"].map(my_df)
     breakpoint()
 
-    return my_df['variable_df']
+    return my_df
 
 if __name__ == "__main__":
    

@@ -5,10 +5,10 @@ def largenum(x):
 
     #"""
 
-    return x * 200
+    return (x * 90)
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
 
-       print("Hello Python")
-       y = int(input("Enter a number"))
-       print(y, largenum(y))
+   print("Hello Python")
+   y = int(input("Enter a number"))
+   print(y, largenum(y))
