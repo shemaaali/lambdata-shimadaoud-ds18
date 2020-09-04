@@ -1,9 +1,8 @@
 from pandas import DataFrame
-from myfun import largenum
-#from myfun import largenum
+from lambdata.myfun import largenum
 
 print("Hello Python")
-print("largenum:", largenum(10))
+print("largenum:", largenum(9))
 
 df = DataFrame({"state": ["CT", "CO", "CA", "TX"]})
 print(df.head())
